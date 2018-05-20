@@ -44,6 +44,7 @@ function display(response) {
         $('.error').show();
     } else {
         $('.result').show();
+        $('.error').hide();
 
         $('#title').html(response.Title);
         if (response.Poster == "N/A") {
