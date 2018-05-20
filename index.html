@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Movies</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+         <!--starts To Search with the name and year -->
+         <div class="jumbotron">
+            <h3 class="text-center">Search By Title and Year </h3>
+            <form id="searchFormName">
+               <div class="row">
+                  <div class="col-md-5">
+                     <input  type="text" class="form-control" id="searchText" placeholder="Title:">
+                  </div>
+                  <div class="col-md-5">
+                     <input  type="text" class="form-control" id="searchYear" placeholder="Year:">
+                  </div>
+                  <button type="submit">Submit</button>
+               </div>
+            </form>
+         </div>
+         <!--Ends of Search with the name and year -->
+         <!--starts To Search with the imdbID -->
+         <div class="jumbotron">
+            <h3 class="text-center">Search By imdbID</h3>
+            <form id="searchFormId">
+               <div class="row">
+                  <div class="col-md-10">
+                     <input  type="text" class="form-control" id="searchId" placeholder="imdbID:">
+                  </div>
+                  <div class="col-md-2">
+                     <button type="submit">Submit</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <!--Ends of Search with the imdbID -->
+
+      </div>
+      <!-- To Display the result -->
+      <div class="container result">
+         <center>
+            <h1>
+               <div id="title" class="text-uppercase"></div>
+            </h1>
+         </center>
+         <hr>
+         <div class="row">
+            <div class="col-md-6" align="center">
+               <img class="coverPic img-responsive" alt="Poster">
+            </div>
+            <div class="col-md-6">
+               <h5>    Year: <span id="Year" ></span></h5>
+               <h5>    Actors: <span id="Actors" ></span></h5>
+               <h5>    Awards: <span id="Awards" ></span></h5>
+               <h5>    BoxOffice: <span id="BoxOffice" ></span></h5>
+               <h5>    Country: <span id="Country" ></span></h5>
+               <h5>    Director: <span id="Director" ></span></h5>
+               <h5>    Genre: <span id="Genre" ></span></h5>
+               <h5>    Language: <span id="Language" ></span></h5>
+               <h5>    Production: <span id="Production" ></span></h5>
+               <h5>    Released: <span id="Released" ></span></h5>
+               <h5>    Runtime: <span id="Runtime" ></span></h5>
+               <h5>    imdbID: <span id="imdbID" ></span></h5>
+               <h5>    Ratings: <span id="Ratings" ></span></h5>
+               <h5>    Website: <span id="link" ></span></h5>
+               <h5>    Plot: <span id="Plot" ></span></h5>
+            </div>
+         </div>
+      </div>
+      <!-- end To Display the result -->
+      <!-- Error display -->
+      <div class="container error" align="center">
+         <h2>Please provide correct input..</h2>
+      <!-- Ends Error display -->
+      </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

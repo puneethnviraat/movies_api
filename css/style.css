@@ -1,0 +1,41 @@
+.container .result{
+    margin-top: 20px;
+}
+#movies img, #movie img{
+     width:100%;
+}
+ @media(min-width:960px){
+     #movies .col-md-3 .well{
+         height: 390px;
+    }
+     #movies .col-md-3 img{
+         height:240px;
+    }
+}
+ .result{
+     position: absolute;
+     background-color: white;
+     top: 50px;
+     width: 100%;
+     height:auto;
+     box-shadow: 0 10px 10px rgba(0,0,0,.5);
+     padding: 10px;
+}
+ .error{
+     position: absolute;
+     background-color: white;
+     top: 50px;
+     width: 100%;
+     height:auto;
+     box-shadow: 0 10px 10px rgba(0,0,0,.5);
+     padding: 10px;
+     color: red;
+}
+ @media only screen and (min-width: 600px) {
+     .result,.error {
+         left:9%;
+    }
+}
+ span{
+     color: #8e0902;
+}
