@@ -40,3 +40,7 @@
      color: #8e0902;
      font-weight: 400;
 }
+#title{
+font-weight: 500;
+    background: linear-gradient(red, yellow);
+}
